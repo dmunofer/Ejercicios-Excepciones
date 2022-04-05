@@ -4,6 +4,9 @@ import re
 correo=input('Introduzca su correo electrónico')
 
 if re.search(". * @. * \ .. *", correo):
+    cadenas = correo.split('@')
+    cadena_final = '¡Bienvenido '+ cadenas[0] +'!'
+    print(cadena_final)
 
 
 elif correo =='':
