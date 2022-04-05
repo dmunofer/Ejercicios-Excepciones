@@ -6,7 +6,7 @@ correo=input('Introduzca su correo electrónico')
 if re.fullmatch(r"^[A-Za-z0-9\.\+_-]+@[A-Za-z0-9\._-]+\.[a-zA-Z]*$",correo):
     cadenas = correo.split('@')
     cadena_final = '¡Bienvenido '+ cadenas[0] +'!'
-    print(cadena_final)
+    print(cadena_final.capitalize())
 
 
 elif correo =='':
